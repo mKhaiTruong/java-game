@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="root" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PlayerDetailController">
+   <children>
+      <AnchorPane fx:id="anchorPane">
+         <children>
+            <GridPane fx:id="gp" alignment="CENTER" layoutY="50.22222222222222" prefWidth="700.0" AnchorPane.bottomAnchor="78.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="300.0" prefWidth="180.0" style="-fx-background-color: rgb(255, 105, 105, 0.2); -fx-border-color: rgb(199, 0, 57); -fx-border-width: 3;" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <children>
+                        <StackPane prefHeight="180.0" prefWidth="180.0">
+                           <children>
+                              <ImageView fx:id="player1" fitHeight="180.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/PickominoBoxCoverImageFirstPlayer.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="label1" text="Label" visible="false">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </StackPane>
+                        <Label text="Chick 1" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <effect>
+                              <DropShadow height="25.0" radius="12.0" spread="0.6" width="25.0">
+                                 <color>
+                                    <Color red="0.0784313753247261" green="0.11764705926179886" blue="0.27450981736183167" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="300.0" prefWidth="180.0" style="-fx-background-color: rgb(255, 105, 105, 0.2); -fx-border-color: rgb(199, 0, 57); -fx-border-width: 3;" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <children>
+                        <StackPane prefHeight="180.0" prefWidth="180.0">
+                           <children>
+                              <ImageView fx:id="player2" fitHeight="180.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/PickominoBoxCoverImageSecondPlayer.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="label2" text="Label" visible="false">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </StackPane>
+                        <Label text="Chick 2" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <effect>
+                              <DropShadow height="25.0" radius="12.0" spread="0.6" width="25.0">
+                                 <color>
+                                    <Color red="0.0784313753247261" green="0.11764705926179886" blue="0.27450981736183167" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="300.0" prefWidth="180.0" style="-fx-background-color: rgb(255, 105, 105, 0.2); -fx-border-color: rgb(199, 0, 57); -fx-border-width: 3;" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <children>
+                        <StackPane prefHeight="180.0" prefWidth="180.0">
+                           <children>
+                              <ImageView fx:id="player3" fitHeight="180.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/PickominoBoxCoverImageThirdPlayer.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="label3" text="Label" visible="false">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </StackPane>
+                        <Label text="Chick 3" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <effect>
+                              <DropShadow height="25.0" radius="12.0" spread="0.6" width="25.0">
+                                 <color>
+                                    <Color red="0.0784313753247261" green="0.11764705926179886" blue="0.27450981736183167" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="300.0" prefWidth="180.0" style="-fx-background-color: rgb(255, 105, 105, 0.2); -fx-border-color: rgb(199, 0, 57); -fx-border-width: 3;" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <children>
+                        <StackPane prefHeight="180.0" prefWidth="180.0">
+                           <children>
+                              <ImageView fx:id="yanfei" fitHeight="180.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/yanfei.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="labeyanfei" text="Label" visible="false">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </StackPane>
+                        <Label text="Yanfei" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <effect>
+                              <DropShadow height="25.0" radius="12.0" spread="0.6" width="25.0">
+                                 <color>
+                                    <Color red="0.0784313753247261" green="0.11764705926179886" blue="0.27450981736183167" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets left="50.0" right="50.0" />
+               </padding>
+            </GridPane>
+            <BorderPane layoutX="23.0" layoutY="31.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+            <Pane layoutY="358.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="80.0" prefWidth="1000.0" style="-fx-background-color: rgb(20, 30, 70, 0.9);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <Button fx:id="play" alignment="CENTER" blendMode="LIGHTEN" layoutY="2.0" mnemonicParsing="false" onMouseClicked="#handlePlayGameButton" prefHeight="80.0" prefWidth="135.0" style="-fx-background-color: rgb(20, 30, 70, 0.9);" text="Play" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Label fx:id="playerLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="23.0" prefHeight="121.0" prefWidth="1000.0" text="Player" textFill="WHITE" textOverrun="WORD_ELLIPSIS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="50.0" />
+               </font>
+               <effect>
+                  <DropShadow height="25.0" radius="12.0" spread="0.6" width="25.0">
+                     <color>
+                        <Color red="0.0784313753247261" green="0.11764705926179886" blue="0.27450981736183167" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+         </children>
+      </AnchorPane>
+      <MediaView fx:id="mv" fitHeight="200.0" fitWidth="200.0" StackPane.alignment="TOP_LEFT" />
+   </children>
+</StackPane>
